@@ -1,0 +1,128 @@
+/* =============== MAIN BOX =============== */
+.content-box {
+    display: flex;
+    /* INLINE */
+    flex-direction: row;
+    /* border: 2px solid red; */
+    /* DIMENSION */
+    height: 80%;
+    width: 90%;
+    /* POSITION */
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    /* Z-INDEX IMPORTANT FOR THE BURGER MENU */
+    z-index: -999;
+}
+
+/* =============== INFO BOX =============== */
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    width: 50%;                         /* 35% DE LA PAGE */
+    
+}
+
+/* =============== SECONDARY HEADING =============== */
+.info h2 {
+    font-size: 15pt;
+    text-align: center;
+    margin:15px 5px;
+}
+/* =============== AVATAR =============== */
+.info img {
+    height: 200px;
+    width: 200px;
+}
+
+/* =============== GREY SEPARATOR =============== */
+.v_separator {
+    float: left;
+    border: 4px solid #666666;
+    border-radius: 5px;
+    height: 100%;
+    width: 0px;
+    margin-top: 0px ;
+    margin-left: -0%;
+}
+
+/* =============== CONTAINER (FLEXBOX) =============== */
+.etiquette-box {
+    float: left;
+    /* border: 2px solid red; */
+    display: flex;
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* =============== MODIFICATION OF ETIQUETTES =============== */
+.etiquette {
+    /* BACKGROUND */
+    background-color: #666666;
+    /* COLOR */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    /* WIDTH */
+    width: 90px;
+    /* ROUNDED BORDER */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* =============== ICONS LIST =============== */
+.list-container {
+    display: flex;
+    /* INLINE */
+    flex-direction: row;
+    margin-left: 20px;
+    text-align: center;
+    /* SPACE BETWEEN THEM */
+    justify-content: space-around;
+}
+
+/* =============== ICONS STYLE (<a>) =============== */
+.list-container a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 10pt;
+    margin-right: 20px;
+    cursor: default;
+    /* border: 1px solid red; */
+
+}
+
+/* =============== ON HOVER =============== */
+.list-container a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* =============== ICON'S DESCRIPTION, ON HOVER WITH ANIMATE.JS =============== */
+.desc {
+    color: white;
+    opacity: 0;
+    transform: translateY(-200%);
+    margin-bottom: -20px;
+}
+
+/* =============== ICONS (<i>) =============== */
+.icon {
+    transition: .25s ease-in-out;
+    font-size: 35pt;
+    height: 50px;
+    width: 50px;
+    opacity: 1;
+}
+
+
+
+
+
+

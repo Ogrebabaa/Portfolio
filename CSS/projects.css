@@ -1,0 +1,83 @@
+
+.project-row {
+    display: flex;
+    /* ALIGNMENT */
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    /* DIMENSION */
+    height: 45%;
+    width: 100%;
+    padding: 5px;
+}
+
+.project-tile {
+    position: relative;
+    /* border: 2px solid red; */
+    margin-left: 10px;
+    height: 100%;
+    width: 40%;
+    
+}
+
+
+
+.project-desc {
+    /* border: 1px solid #CCC; */
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px #333;
+    /* ALIGNMENT */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* HORIZONTALY ALIGNEMENT */
+    align-items: center;        /* VERTICALY ALIGNEMENT */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* DIMENSION */
+    height: 100%;
+    width: 100%;
+    background-image: url("http://unsplash.it/400/300/?random");
+    background-position: center;
+    background-size: cover;  
+
+}
+
+
+
+#kdanse {
+    background-image: url("../assets/IMG/kdanse.png");
+}
+
+#mcu {
+    background-image: url("../assets/IMG/mcu-timeline.png");
+}
+
+#cv {
+    background-image: url("../assets/IMG/cv-en-ligne.png");
+}
+
+#pacman {
+    background-image: url("../assets/IMG/pacman.jpeg");
+}
+
+.project-desc:hover {
+    background-color: #BBB;
+    background-blend-mode: screen;
+    box-shadow: 0px 0px 15px #333;
+}
+
+.project-desc p {
+    background: none;
+    display: none;
+}
+
+.project-desc:hover p {
+    display: block;
+}
+
+.project-desc:hover a {
+    display: block;
+}
+
+

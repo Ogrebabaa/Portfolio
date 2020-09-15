@@ -1,0 +1,42 @@
+@import url(animate.css);
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    color: white;
+    z-index: 998;
+    background: none;
+
+}
+
+#a_left {
+    left: 20px;
+}
+
+#a_left_img {
+    float: left;
+}
+
+#a_right {
+    right: 20px;
+}
+
+#a_right_img {
+    float: right;
+}
+
+
+
+.next_page_title {
+    display: none;
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: 7px 20px;
+
+}
+
+.next_page_title:hover {
+    text-decoration: none;
+    color: white;
+}
