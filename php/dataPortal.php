@@ -7,7 +7,6 @@ $rss = simplexml_load_file('https://www.google.com/alerts/feeds/1551636023396282
 ?> 
 
 
-
 <div class='centered veille-content'> 
     <h2>Veille technologique</h2>
     <hr class='separator'>
@@ -67,32 +66,23 @@ for ($i = 0; $i < $nbArticles; $i++) {
             <!-- Menu de tri - Selection des categories dans la BDD -->
             <?php
             try {
-                // recuperation des categories
+                // recuperation et affchage des categories
                 $recupCat = $dbco->prepare(
                     "SELECT id_cat, libelle FROM PF_A_CATEGORIE"
                 );
                 $recupCat->execute();
                 $listCat = $recupCat->fetchAll(PDO::FETCH_ASSOC);
-                // print_r($listCat);
+
                 for ($j = 0; $j < count($listCat); $j++) {
                     $libelle = $listCat[$j]['libelle'];
                     $id_cat = $listCat[$j]['id_cat'];
-                    // affichage de la categorie + gestion du style de la catégorie actuelle
-                    echo "<a href='index.php?page=dataPortal.php&tri=$id_cat' class='tri_nav_item ";
-                    if (!empty($_GET['tri'])) {
-                        if ($_GET['tri'] == $id_cat) {
-                            echo "current_cat";
-                        }
-                    }
-                    echo "'>$libelle</a>";
+
+                    echo "<div id='cat_$id_cat' onclick='selectCat($id_cat); selected(cat_$id_cat);' class='tri_nav_item '>$libelle</div>";
+
                 }
-                echo "<a href='index.php?page=dataPortal.php&tri=' class='tri_nav_item ";
-                    if (empty($_GET['tri'])) {
-                        
-                            echo "current_cat";
-                        
-                    }
-                    echo "'>Tout</a>";
+
+                echo "<div id='cat_all' onclick='selectCat(\"cat_all\"); selected(cat_all);' class='tri_nav_item '>Tout</div>";
+                    
             } catch(PDOException $e) {
                 echo "error:",$e->getMessage();
             }
@@ -101,59 +91,66 @@ for ($i = 0; $i < $nbArticles; $i++) {
             ?>
             
         </div>
-        <div class="BDD-list-article-container row">
+        <div id="BDD-list-article-container" class="BDD-list-article-container row">
             
         <!-- Recuperation et affichage des articles -->
             <?php
-                
-                $BDD_list_articles;
-                try {
-                    if (empty($_GET['tri'])) {
-                        // Recupère tout les articles si pas de parametre
-                        $recupArticle = $dbco->prepare(
-                            "SELECT * FROM PF_ARTICLE"
-                        );
+                // $BDD_list_articles;
+                // try {
+                //     if (empty($_GET['tri'])) {
+                //         // Recupère tout les articles si pas de parametre
+                //         $recupArticle = $dbco->prepare(
+                //             "SELECT * FROM PF_ARTICLE"
+                //         );
                         
-                    } else {
-                        // Recupère les articles de la categorie en parametre
-                        $tri_cat = $_GET['tri'];
+                //     } else {
+                //         // Recupère les articles de la categorie en parametre
+                //         $tri_cat = $_GET['tri'];
                         
-                        $recupArticle = $dbco->prepare(
-                            "SELECT titre, date_publi, AR.id_article, AP.id_cat, lien, contenu FROM `PF_ARTICLE`AR
-                            INNER JOIN PF_APPARTENIR AP ON AR.id_article = AP.id_article
-                            WHERE id_cat = :id_cat
-                            "
-                        );
+                //         $recupArticle = $dbco->prepare(
+                //             "SELECT titre, date_publi, AR.id_article, AP.id_cat, lien, contenu FROM `PF_ARTICLE`AR
+                //             INNER JOIN PF_APPARTENIR AP ON AR.id_article = AP.id_article
+                //             WHERE id_cat = :id_cat
+                //             "
+                //         );
 
-                        $recupArticle->bindParam(':id_cat', $tri_cat);
-                    }
+                //         $recupArticle->bindParam(':id_cat', $tri_cat);
+                //     }
 
-                    $recupArticle->execute();
-                        $BDD_list_articles = $recupArticle->fetchAll(PDO::FETCH_ASSOC);
-                        for ($j = 0; $j < count($BDD_list_articles); $j++) {
-                            $id = $BDD_list_articles[$j]['id_article'];
-                            $titre = $BDD_list_articles[$j]['titre'];
-                            $lien = $BDD_list_articles[$j]['lien'];
-                            $contenu = $BDD_list_articles[$j]['contenu'];
-                            $date_publication = $BDD_list_articles[$j]['date_publi'];
+                //     $recupArticle->execute();
+                //         $BDD_list_articles = $recupArticle->fetchAll(PDO::FETCH_ASSOC);
+                //         for ($j = 0; $j < count($BDD_list_articles); $j++) {
 
-                            echo "
-                            <div class='panel-article column'>
-                                <p class='panel-article-title'>\"$titre\"</p>
-                                <p class='panel-article-date'>Paru le: $date_publication</p>
-                                <a target='blank' href='$lien' class='panel-article-link'>
-                                    <i class='fas fa-eye'></i>
-                                </a>
-                            </div>
-                            ";
-                        }
-                        // print_r($BDD_list_articles);
+                //             //suite a des problème de balise dans les titres : regex pour enlever les <b> </b>
+                //             $reg = "/(<b>)|(<\/b>)/i";
+                //             $titre = $BDD_list_articles[$j]['titre'];
+                //             $res = preg_match($reg, $titre); // return 1 si le pattern match, sinon 0
+                //             if ($res === 1) {
+                //                 $titre = preg_replace($reg, "", $titre);
+                //             }
+
+                //             $id = $BDD_list_articles[$j]['id_article'];
+                            
+                //             $lien = $BDD_list_articles[$j]['lien'];
+                //             $contenu = $BDD_list_articles[$j]['contenu'];
+                //             $date_publication = $BDD_list_articles[$j]['date_publi'];
+                //             echo "
+                //             <div class='panel-article column'>
+                //                 <p class='panel-article-title'>\"$titre\"</p>
+                //                 <p class='panel-article-date'>Paru le: $date_publication</p>
+                //                 <a target='blank' href='$lien' class='panel-article-link'>
+                //                     <i class='fas fa-eye'></i>
+                //                 </a>
+                //             </div>
+                //             ";
+                //         }
+                //         // print_r($BDD_list_articles);
 
                         
 
-                } catch(PDOException $e) {
-                    echo "error:",$e->getMessage();
-                }
+                // } catch(PDOException $e) {
+                //     echo "error:",$e->getMessage();
+                // }
                 
             ?>
         </div>

@@ -76,6 +76,7 @@
     text-decoration: none;
     color: #FFF;
     transition: .25s ease-in-out;
+    cursor: pointer;
 }
 
 .tri_nav_item:hover, .current_cat {
