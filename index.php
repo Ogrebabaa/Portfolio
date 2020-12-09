@@ -13,7 +13,7 @@
     }
 
     // traitement de la langue
-    $langueDefaut = 'fr';
+    $langueDefaut ='fr';
     $anglais = 'en';
 
     if (!empty($_GET['langue'])) {
