@@ -8,6 +8,10 @@
         echo '<script type="text/javascript" src="JS/tri_veille.js"></script>';
     }
 
+    if ($pageName === "contact.php") {
+        echo '<script type="text/javascript" src="JS/contact_form.js"></script>';
+    }
+
     if ($pageName === "home.php") {
         echo '<script type="text/javascript" src="JS/load_particle.js"></script>';
     }
