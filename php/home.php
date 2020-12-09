@@ -8,7 +8,7 @@ echo "
     <span class='separator'></span>
     <h2 class='no-bkg'>"; echo $langue->h2; echo "</h2>
     <span class='separator' id='s2'></span>
-    <a href='projet.html' class='btn-main'> $langue->btn_projet</a>
+    <a href='index.php?page=projet.php' class='btn-main'> $langue->btn_projet</a>
 </div>
 
 ";

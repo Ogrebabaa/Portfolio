@@ -12,8 +12,6 @@
 
  $nbArticles = count($rss->entry);
 
-
-
 echo "
 
 <span id='pageTitle'>Dashboard</span>
