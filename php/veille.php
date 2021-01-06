@@ -12,7 +12,7 @@
 
  $nbArticles = count($rss->entry);
 
-echo "
+ ?>
 
 <span id='pageTitle'>Dashboard</span>
 <a id='adminExit' href='index.php?page=deconnexion.php'>
@@ -31,12 +31,20 @@ echo "
 
 <div class='center admin-content column centered'>
 
-<h1> Nouveaux articles: </h1>
+<div id="admin_veille_nav">
+    <div id="daily_nav" onclick="navTo('daily');" class="btn_nav_veille nav_veille_selected">
+        <p>Articles du jour </p>
+    </div>
+    <div id="manage_nav" onclick="navTo('manage');" class="btn_nav_veille">
+        <p>Gerer les articles </p>
+    </div>
+</div>
 
-    <div class='veille-box'>
+    <div id="daily" class='veille-box'>
         
         <!-- liste des articles -->
-";
+<?php
+
 
 for ($i = 0; $i < $nbArticles; $i++) {
     $entry = $rss->entry[$i];
@@ -87,14 +95,69 @@ for ($i = 0; $i < $nbArticles; $i++) {
     ";
     
 }
-echo "
-        
-        
+
+?>
+                
     </div>
+
+    <div id="manage" class="hide">
+
+        <div id="BDD-list-article-container" class="BDD-list-article-container row">
+            
+        <!-- Recuperation et affichage des articles -->
+           
+        
+            
+            <?php
+                try {
+                    $recupArticle = $dbco->prepare(
+                        "SELECT * FROM PF_ARTICLE"
+                    );
+
+                    $recupArticle->execute();
+                    $BDD_list_articles = $recupArticle->fetchAll(PDO::FETCH_ASSOC);
+                    for ($j = 0; $j < count($BDD_list_articles); $j++) {
+
+                        //suite a des problème de balise dans les titres : regex pour enlever les <b> </b>
+                        $reg = "/(<b>)|(<\/b>)/i";
+                        $titre = $BDD_list_articles[$j]['titre'];
+                        $res = preg_match($reg, $titre); // return 1 si le pattern match, sinon 0
+                        if ($res === 1) {
+                            $titre = preg_replace($reg, "", $titre);
+                        }
+
+                        $id = $BDD_list_articles[$j]['id_article'];
+                        
+                        $lien = $BDD_list_articles[$j]['lien'];
+                        $contenu = $BDD_list_articles[$j]['contenu'];
+                        $date_publication = $BDD_list_articles[$j]['date_publi'];
+                        
+                        echo "
+                        <div class='panel-article column'>
+                            <p class='panel-article-title'>\"$titre\"</p>
+                            <p class='panel-article-date'>Paru le: $date_publication</p>
+                            <a target='blank' href='$lien' class='panel-article-btn panel-article-link'>
+                                <i class='fas fa-eye'></i>
+                            </a>
+                            <a onclick='deleteArticle($id);' class='panel-article-btn panel-article-edit'>
+                                <i class='fas fa-trash'></i>
+                            </a>
+                        </div> ";
+
+                    }
+
+                } catch(PDOException $e) {
+                    echo "error:",$e->getMessage();
+                }
+
+            ?>
+        </div>
+           
+    </div>  
 
 </div>
 
-";
+<?php
 
 if (isset($_GET['save-article'])) {
     $id_article = $_GET['save-article'];

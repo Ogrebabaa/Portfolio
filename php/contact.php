@@ -2,8 +2,6 @@
 
  
 include('init.php');
-
-
     
 try {
     $dbco = new PDO(DNS, LOGIN, PASSWORD, $options);
@@ -19,15 +17,45 @@ try {
         $message = $_POST["msg"];
         $priorite = $_POST["statut"];
 
-
-
-        $sth2 = $dbco->prepare(
-            "INSERT INTO PF_Message(nom, prenom, mail, objet, contenu, priorite, date)
-             VALUES('$nom', '$prenom', '$email', '$objet', '$message', $priorite, NOW())"
+        $testContact = $dbco->prepare(
+            "SELECT email_contact FROM PF_Contact WHERE email_contact = :email"
         );
 
-        $sth2->execute();
+        $testContact->bindParam(':email', $email);
+        $testContact->execute();
+        $testContact_res = $testContact->fetchAll(PDO::FETCH_ASSOC);
+
+        $sth3 = $dbco->prepare(
+            "INSERT INTO PF_Contact(email_contact, nom, prenom, statut)
+             VALUES( :email, :nom, :prenom, :statut)"
+        );
+
+        $sth3->bindParam(':email', $email);
+        $sth3->bindParam(':nom', $nom);
+        $sth3->bindParam(':prenom', $prenom);
+        $sth3->bindParam(':statut', $priorite);
         
+
+        $sth2 = $dbco->prepare(
+            "INSERT INTO PF_Message(objet, contenu, priorite, date, email_contact)
+             VALUES(:objet, :message, :priorite, NOW(), :email)"
+        );
+
+        $sth2->bindParam(':objet', $objet);
+        $sth2->bindParam(':message', $message);
+        $sth2->bindParam(':priorite', $priorite);
+        $sth2->bindParam(':email', $email);
+
+        if (empty($testContact_res)) {
+            //si pas contact, ajoute le contact
+            $sth3->execute();
+            $sth2->execute(); 
+        } else {
+            //sinon, ajoute uniquement le message
+            $sth2->execute();
+
+        }
+
         $msgSent = true;
         
     }
@@ -50,8 +78,7 @@ echo "
 
     echo"
     <span class='separator'></span>
-    <form class='column contact-form no-bkg' action='index.php?page=contact.php' method='POST'>
-
+    <form class='column contact-form no-bkg' method='POST'>
 
         <div class='row contact-form--name'>
             <input type='text' name='nom' placeholder='$langue->nom' id='nom'>
@@ -77,7 +104,8 @@ echo "
         <input class='contact-form--input' type='email' name='email' placeholder='Mail' id='mail'>
         <input class='contact-form--input' type='text' name='objet' placeholder='$langue->objet' id='objet'>
         <textarea id='textearea' name='msg' placeholder='$langue->message' id='msg' cols='30' rows='5'></textarea>
-        <input class='contact-form--input' type='submit' id='send-btn-contact' class='send-btn' value='$langue->envoyer'>
+        <input class='contact-form--input send-btn' type='submit' id='send-btn-contact' value='$langue->envoyer'>
+        
     </form>
     <a class='toHogward' href='index.php?page=admin.php'>
         <i class='fas fa-user-lock'></i>
@@ -86,5 +114,5 @@ echo "
 
 ";
 
-
+// <a class= 'contact-form--input send-btn' id='send-btn-contact'>$langue->envoyer</a>
 ?>

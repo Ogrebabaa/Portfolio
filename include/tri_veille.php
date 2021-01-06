@@ -47,7 +47,7 @@ $dbco = new PDO(DNS, LOGIN, PASSWORD, $options);
                 <div class='panel-article column'>
                     <p class='panel-article-title'>\"$titre\"</p>
                     <p class='panel-article-date'>Paru le: $date_publication</p>
-                    <a target='blank' href='$lien' class='panel-article-link'>
+                    <a target='blank' href='$lien' class='panel-article-btn panel-article-link'>
                         <i class='fas fa-eye'></i>
                     </a>
                 </div>

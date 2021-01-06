@@ -31,11 +31,11 @@ echo "
     </div>
     <div class='project-row'>
         <div class='project-tile'>
-            <div id='portfolio' class='project-desc animate'>
+            <div id='artic' class='project-desc animate'>
                 <p>
-                    $langue->autre
+                    $langue->artic
                 </p>
-                <a class='project-btn is-forbidden' href='#'>
+                <a target='blank' class='project-btn ' href='https://articcoaching.fr/'>
                     $langue->lien
                 </a>
             </div>
