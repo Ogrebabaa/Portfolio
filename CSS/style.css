@@ -35,6 +35,10 @@
     line-height: 1.5;
 }
 
+.hide {
+    display: none;
+}
+
 /* Particles canvas */
 #particles-js {
     position: absolute;

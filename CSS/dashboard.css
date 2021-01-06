@@ -53,6 +53,8 @@
     color: var(--main-color);
 }
 
+
+
 /* Main content */
 
 .admin-msg--box, .admin-msg--view  {
@@ -134,6 +136,33 @@
 
 /* veille page */
 
+/* Veille nav */
+#admin_veille_nav {
+    color: var(--admin-color);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #FFF;
+}
+
+.btn_nav_veille {
+    /* border: 2px solid red ;  */
+    padding: 10px;
+    
+}
+
+.btn_nav_veille:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.nav_veille_selected {
+    text-decoration: underline;
+    color: var(--main-color);
+
+}
+
 .veille-item {
     border: 5px solid #FFF;
     text-align: left;
@@ -188,4 +217,6 @@
     color: #fff;
     cursor: pointer;
 }
+
+
 

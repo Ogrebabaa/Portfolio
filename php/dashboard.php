@@ -36,20 +36,30 @@ try {
         switch($tri) {
             case 'date':
                 $recupInfoMsg = $dbco->prepare(
-                    "SELECT id_message, mail, priorite, nom, prenom, contenu, objet, date FROM PF_Message
+                    "SELECT id_message, priorite,  contenu, objet, date FROM PF_Message
                     ORDER BY date DESC"
                 );
             break;
             case 'nom':
                 $recupInfoMsg = $dbco->prepare(
-                    "SELECT id_message, mail, priorite, nom, prenom, contenu, objet FROM PF_Message
+                    "SELECT id_message, priorite, contenu, objet FROM PF_Message
                     ORDER BY nom"
                 );
             break;
             case 'priorite':
                 $recupInfoMsg = $dbco->prepare(
-                    "SELECT id_message, mail, priorite, nom, prenom, contenu, objet FROM PF_Message
+                    "SELECT id_message, priorite, contenu, objet FROM PF_Message
                     ORDER BY priorite DESC"
+                );
+            case 'lu':
+                $recupInfoMsg = $dbco->prepare(
+                    "SELECT id_message, priorite, contenu, objet, lu FROM PF_Message
+                    WHERE lu = 1"
+                );
+            case 'nonlu':
+                $recupInfoMsg = $dbco->prepare(
+                    "SELECT id_message, priorite, contenu, objet, lu FROM PF_Message
+                    WHERE lu = 0"
                 );
             break;
 
@@ -57,7 +67,7 @@ try {
 
     } else {
         $recupInfoMsg = $dbco->prepare(
-            "SELECT id_message, mail, priorite, nom, prenom, contenu, objet FROM PF_Message"
+            "SELECT id_message, priorite, contenu, objet FROM PF_Message"
         );
     }
     
@@ -99,8 +109,13 @@ echo "
             <a href='index.php?page=dashboard.php&tri=date'>Plus recent</a>
             <a href='index.php?page=dashboard.php&tri=nom'>nom</a>
             <a href='index.php?page=dashboard.php&tri=priorite'>priorite</a>
+            <a href='index.php?page=dashboard.php&tri=lu'>lu</a>
+            <a href='index.php?page=dashboard.php&tri=nonlu'>non lu</a>
         </span>
         
+
+        
+
         <!-- liste des msg -->
         ";
         // Suppression des msg
@@ -124,8 +139,28 @@ echo "
 
             // on recupere le resultat de la requete contenant la liste des auteurs de message
             $listInfoMsg = $recupInfoMsg->fetchAll(PDO::FETCH_ASSOC);
+
+            if ($_GET["tri"] === "lu") {
+                $recupInfoMsg = $dbco->prepare(
+                    "SELECT id_message, priorite, contenu, objet, lu FROM PF_Message
+                    WHERE lu = 1"
+                );
+
+                $recupInfoMsg->execute();
+                $listInfoMsg = $recupInfoMsg->fetchAll(PDO::FETCH_ASSOC);
+            } 
+            if ($_GET["tri"] === "nonlu") {
+                $recupInfoMsg = $dbco->prepare(
+                    "SELECT id_message, priorite, contenu, objet, lu FROM PF_Message
+                    WHERE lu = 0"
+                );
+
+                $recupInfoMsg->execute();
+                $listInfoMsg = $recupInfoMsg->fetchAll(PDO::FETCH_ASSOC);
+            } 
+            print_r($listInfoMsg);
             $keys = array_keys($listInfoMsg);
-            for ($i = 0; $i < count($listInfoMsg); $i++) {
+            for ($i = 0; $i < sizeof($listInfoMsg); $i++) {
                 echo "
                     <div class='admin-msg--box_item'>";
                 foreach($listInfoMsg[$keys[$i]] as $key=> $value) {
@@ -146,7 +181,7 @@ echo "
                 }
 
                 echo "
-                <a href='index.php?page=dashboard.php&msg=$idMsg' class='msg-auteur'><strong>De :</strong> $mailAuteur <br></a>
+                <a href='index.php?page=dashboard.php&msg=$idMsg' class='msg-auteur'><strong>De :</strong> Mail<br></a>
                 <span style='background: 
                 ";
                 if ($priorite == 1) {
@@ -169,7 +204,7 @@ echo "
             $dbco = new PDO(DNS, LOGIN, PASSWORD, $options);
         
             $recupMsg = $dbco->prepare(
-                "SELECT nom, prenom, contenu, objet, date FROM PF_Message
+                "SELECT  contenu, objet, date FROM PF_Message
                 WHERE id_message = $idMsgToDisplay"
             );
         
@@ -177,34 +212,35 @@ echo "
         
             $listMsg = $recupMsg->fetchAll(PDO::FETCH_ASSOC);
             // print_r($listMsg);
-        
-            foreach($listMsg[$keys[0]] as $key=> $value) {
-                    
-                // print_r($listMsg);
-                switch($key) {
-                    case 'nom':
-                        $nomMsg = $value;
-                    break;
-                    case 'prenom':
-                        $prenomMsg = $value;
-                    break;
-                    case 'objet':
-                        $objetMsg = $value;
-                    break;
-                    case 'contenu':
-                        $contenuMsg = $value;
-                    break;
-                    case 'date':
-                        $dateMsg = $value;
-                    break;
-                }
-            }
 
+            // $nomMsg = $value;
+            // $prenomMsg = $value;
+
+            $objetMsg = $listMsg[0]["objet"];
+
+            $contenuMsg = $listMsg[0]["contenu"];
+        
+            $dateMsg = $listMsg[0]["date"];
             
             
-            echo "
+            
+        //     echo "
+        // <div class='admin-msg--view_head'>
+        //     <p class='admin-msg--view_title'><strong>De :</strong> $nomMsg $prenomMsg</p>
+        //     <p class='admin-msg--view_Date'><strong>Le :</strong> $dateMsg</p>
+        // </div>
+        // <div class='admin-msg--view_body' >
+            
+        //     <p class='admin-msg--view_objet'><strong>Objet :</strong> $objetMsg</p>
+        //     <p class='admin-msg--view_labelMsg'><strong>Message:</strong></p>
+        //     <blockquote class='admin-msg--view_contentMsg'>$contenuMsg</blockquote>
+        //     <a href='index.php?page=dashboard.php&delete=$idMsgToDisplay' class='admin-msg--view_deleteMsg'>
+        //         <i class='fas fa-trash-alt'></i>
+        //     </a>
+        // </div>";
+        echo "
         <div class='admin-msg--view_head'>
-            <p class='admin-msg--view_title'><strong>De :</strong> $nomMsg $prenomMsg</p>
+            <p class='admin-msg--view_title'><strong>De :</strong> Nom Prenom</p>
             <p class='admin-msg--view_Date'><strong>Le :</strong> $dateMsg</p>
         </div>
         <div class='admin-msg--view_body' >

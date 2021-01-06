@@ -91,68 +91,67 @@ for ($i = 0; $i < $nbArticles; $i++) {
             ?>
             
         </div>
+        <div>
+        <form action='index.php?page=dataPortal.php&tri=dateCustom' method='POST'>
+            <label for='dateDebut'>Date début</label>
+            <input type='date' name='dateDebut' id='dateDebut'>
+            <br>
+            <label for='dateFin'>Date fin</label>
+            <input type='date' name='dateFin' id='dateFin'>
+            <br>
+            <input type='submit' value='trier'>
+        </form>
+
+        <?php
+            if (isset($_GET["tri"])) {
+                $dateDebut = $_POST["dateDebut"];
+                $dateFin = $_POST["dateFin"];
+                echo "Article paru entre le $dateDebut et $dateFin";
+                try {
+                    $recupArticleDate = $dbco->prepare(
+                        "SELECT id_article, titre, date_publi, lien, contenu FROM `PF_ARTICLE`
+                       WHERE date_publi BETWEEN '$dateDebut' AND '$dateFin'
+                        "
+                    );
+                    
+                    $recupArticleDate->execute();
+                    $BDD_list_articlesDate = $recupArticleDate->fetchAll(PDO::FETCH_ASSOC);
+                    for ($j = 0; $j < sizeof($BDD_list_articlesDate); $j++) {
+        
+                        //suite a des problème de balise dans les titres : regex pour enlever les <b> </b>
+                        $reg = "/(<b>)|(<\/b>)/i";
+                        $titre = $BDD_list_articlesDate[$j]['titre'];
+                        $res = preg_match($reg, $titre); // return 1 si le pattern match, sinon 0
+                        if ($res === 1) {
+                            $titre = preg_replace($reg, "", $titre);
+                        }
+        
+                        $id = $BDD_list_articlesDate[$j]['id_article'];
+                        
+                        $lien = $BDD_list_articlesDate[$j]['lien'];
+                        $contenu = $BDD_list_articlesDate[$j]['contenu'];
+                        $date_publication = $BDD_list_articlesDate[$j]['date_publi'];
+                        echo "
+                        <div class='panel-article column'>
+                            <p class='panel-article-title'>\"$titre\"</p>
+                            <p class='panel-article-date'>Paru le: $date_publication</p>
+                            <a target='blank' href='$lien' class='panel-article-btn panel-article-link'>
+                                <i class='fas fa-eye'></i>
+                            </a>
+                        </div>
+                        ";
+                    }
+
+                } catch(PDOException $e) {
+                    echo "error:",$e->getMessage();
+                }
+            }
+        ?>
+        </div>
         <div id="BDD-list-article-container" class="BDD-list-article-container row">
             
         <!-- Recuperation et affichage des articles -->
-            <?php
-                // $BDD_list_articles;
-                // try {
-                //     if (empty($_GET['tri'])) {
-                //         // Recupère tout les articles si pas de parametre
-                //         $recupArticle = $dbco->prepare(
-                //             "SELECT * FROM PF_ARTICLE"
-                //         );
-                        
-                //     } else {
-                //         // Recupère les articles de la categorie en parametre
-                //         $tri_cat = $_GET['tri'];
-                        
-                //         $recupArticle = $dbco->prepare(
-                //             "SELECT titre, date_publi, AR.id_article, AP.id_cat, lien, contenu FROM `PF_ARTICLE`AR
-                //             INNER JOIN PF_APPARTENIR AP ON AR.id_article = AP.id_article
-                //             WHERE id_cat = :id_cat
-                //             "
-                //         );
-
-                //         $recupArticle->bindParam(':id_cat', $tri_cat);
-                //     }
-
-                //     $recupArticle->execute();
-                //         $BDD_list_articles = $recupArticle->fetchAll(PDO::FETCH_ASSOC);
-                //         for ($j = 0; $j < count($BDD_list_articles); $j++) {
-
-                //             //suite a des problème de balise dans les titres : regex pour enlever les <b> </b>
-                //             $reg = "/(<b>)|(<\/b>)/i";
-                //             $titre = $BDD_list_articles[$j]['titre'];
-                //             $res = preg_match($reg, $titre); // return 1 si le pattern match, sinon 0
-                //             if ($res === 1) {
-                //                 $titre = preg_replace($reg, "", $titre);
-                //             }
-
-                //             $id = $BDD_list_articles[$j]['id_article'];
-                            
-                //             $lien = $BDD_list_articles[$j]['lien'];
-                //             $contenu = $BDD_list_articles[$j]['contenu'];
-                //             $date_publication = $BDD_list_articles[$j]['date_publi'];
-                //             echo "
-                //             <div class='panel-article column'>
-                //                 <p class='panel-article-title'>\"$titre\"</p>
-                //                 <p class='panel-article-date'>Paru le: $date_publication</p>
-                //                 <a target='blank' href='$lien' class='panel-article-link'>
-                //                     <i class='fas fa-eye'></i>
-                //                 </a>
-                //             </div>
-                //             ";
-                //         }
-                //         // print_r($BDD_list_articles);
-
-                        
-
-                // } catch(PDOException $e) {
-                //     echo "error:",$e->getMessage();
-                // }
-                
-            ?>
+           
         </div>
         
     </div>
