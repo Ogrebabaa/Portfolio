@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', init, false);
 
 function init() {
 
-
     try {
         //Déclaration des variables pour la flèche droite
         var arrow_right = document.getElementById('a_right'); //la Div
@@ -13,7 +12,7 @@ function init() {
 
             // Animation de l'icône
             arrow_right_img.classList.remove('animate_fadeOut');
-            arrow_right_img.src = 'assets/ICON/arrow_hover.svg';
+            arrow_right_img.src = base_url + '/assets/ICON/arrow_hover.svg';
             arrow_right_img.classList.add('animate_fadeIn');
 
             // Animation du lien vers l'autre page
@@ -26,7 +25,7 @@ function init() {
         arrow_right.addEventListener('mouseout', function () { //Ajout d'évenements qu'en on ne survol plus
 
             // Animation de l'icône
-            arrow_right_img.src = 'assets/ICON/arrow_nav_right.svg';
+            arrow_right_img.src = base_url + '/assets/ICON/arrow_nav_right.svg';
             arrow_right_img.classList.remove('animate_fadeIn');
             arrow_right_img.classList.add('animate_slideInLeft');
 
@@ -38,9 +37,10 @@ function init() {
 
         });
     } catch (error) {
-        console.log('Erreur de chargement d ela fleche droite');
+        console.log('Non chargement de la fleche droite');
     }
         
+    try {
 
         //Déclaration des variables pour la flèche gauche 
         var arrow_left = document.getElementById('a_left'); //la Div
@@ -51,7 +51,7 @@ function init() {
 
             // Animation de l'icône
             arrow_left_img.classList.remove('animate_fadeOut');
-            arrow_left_img.src = 'assets/ICON/arrow_hover.svg';
+            arrow_left_img.src = base_url + '/assets/ICON/arrow_hover.svg';
             arrow_left_img.classList.add('animate_fadeIn');
 
             // Animation du lien vers l'autre page
@@ -64,7 +64,7 @@ function init() {
         arrow_left.addEventListener('mouseout', function () { //Ajout d'évenements qu'en on ne survol plus
 
             // Animation de l'icône
-            arrow_left_img.src = 'assets/ICON/arrow_nav_left.svg';
+            arrow_left_img.src = base_url + '/assets/ICON/arrow_nav_left.svg';
             arrow_left_img.classList.remove('animate_fadeIn');
             arrow_left_img.classList.add('animate_slideInRight');
 
@@ -74,6 +74,8 @@ function init() {
             arrow_left_title.style.display = 'none';
 
         });
-    
+    } catch (error) {
+        console.log('Non chargement de la fleche gauche');
+    }
 
 }

@@ -39,5 +39,6 @@
         particlesJS.load("particles-js", "http://localhost:8888/portfolio/Portfolio/public/particles.json", function () {
             console.log("callback - particles.js config loaded");
         });
+        var base_url = "<?php echo base_url(); ?>";
     </script>
 </body>

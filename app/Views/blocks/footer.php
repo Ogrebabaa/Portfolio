@@ -1,7 +1,6 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>/assets/JS/jquery-3.4.1.min.js"></script>
 <script src="<?php echo base_url(); ?>/assets/JS/main.js"></script>
-<script src="<?php echo base_url(); ?>/assets/JS/animate.js"></script>
-<script type="text/javascript" src="J<?php echo base_url(); ?>/assets/S/arrow.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/JS/arrow.js"></script>
 
 <?php
     // if ($pageName === "dataPortal.php") {
