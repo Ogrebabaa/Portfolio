@@ -23,10 +23,12 @@
         
     </ul>
     <div id='l_switch' class='l_switch'>
-            <a id='l_link' href='#'>
-                <i class='fas fa-language' aria-hidden='true'></i>
-            </a>
-        </div>
+        <a id='l_link' href='#'>
+            <i class="fas fa-language"></i>
+        </a>
+    </div>
 </div>
+
+
 
 

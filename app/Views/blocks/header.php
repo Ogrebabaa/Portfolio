@@ -15,7 +15,7 @@
 
 <!-- LINK ============================================================= -->
 <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/CSS/style.css">
-<script src="https://use.fontawesome.com/0db6fea64e.js"></script>
+<script src="https://kit.fontawesome.com/f922a2e803.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/CSS/responsive.css">
 
 <!-- LINK ============================================================= -->
