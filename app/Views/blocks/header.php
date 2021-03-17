@@ -41,4 +41,8 @@
         });
         var base_url = "<?php echo base_url(); ?>";
     </script>
-</body>
+    <div class="loading_screen">
+        <span class="loading_screen--dot is-animate-growing"></span>
+        <span class="loading_screen--dot is-animate-growing"></span>
+        <span class="loading_screen--dot is-animate-growing"></span>
+    </div>

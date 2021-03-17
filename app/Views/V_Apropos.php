@@ -86,8 +86,8 @@
             <!-- content of the list  -->
             <div class='list-container'>
                 <a class='animate'  >
-                    <i class='fab fa-bitbucket icon'></i>
-                    <p class='desc'>Bitbucket</p>
+                    <i class='fab fa-github icon'></i>
+                    <p class='desc'>GitHub</p>
                 </a>
                 <a class='animate'>
                     <i class='fab fa-linkedin icon'></i>

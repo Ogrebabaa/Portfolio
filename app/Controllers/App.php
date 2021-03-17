@@ -7,6 +7,8 @@ class App extends BaseController
 	public function index()
 	{
 		//-----------------------
+		$M_Admin = model('App\Models\M_Admin');
+		$data = $M_Admin->find("adminsama");
 		
 	}
 

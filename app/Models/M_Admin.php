@@ -5,18 +5,12 @@ use CodeIgniter\Model;
 
 class M_Admin extends Model
 {
-    private $login;
-    private $passwd;
+    protected $table = "PF_Admin";
+    protected $primaryKey = 'login';
 
-    //Exemple de requete 
-    // public function getAll() {
-    //     $db = \Config\Database::connect();
-    //     $builder = $db->table('PF_Admin');
-    //     $query = $builder->get();
-    //     foreach ($query->getResult() as $row) {
-    //         echo $row->passwd;
-    //     }
-    // }
+    protected $useAutoIncrement = false;
+
+    protected $returnType = 'array';
 
 }
 

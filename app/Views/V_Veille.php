@@ -1,7 +1,5 @@
 <?php 
 
-include("init.php");
-$dbco = new PDO(DNS, LOGIN, PASSWORD, $options);
 $rss = simplexml_load_file('https://www.google.com/alerts/feeds/15516360233962822684/14973034615877470823') or die("Erreur : impossible de creer l'objet");
 
 ?> 
@@ -65,27 +63,27 @@ for ($i = 0; $i < $nbArticles; $i++) {
         <div class='tri_nav'>
             <!-- Menu de tri - Selection des categories dans la BDD -->
             <?php
-            try {
-                // recuperation et affchage des categories
-                $recupCat = $dbco->prepare(
-                    "SELECT id_cat, libelle FROM PF_A_CATEGORIE"
-                );
-                $recupCat->execute();
-                $listCat = $recupCat->fetchAll(PDO::FETCH_ASSOC);
+            // try {
+            //     // recuperation et affchage des categories
+            //     $recupCat = $dbco->prepare(
+            //         "SELECT id_cat, libelle FROM PF_A_CATEGORIE"
+            //     );
+            //     $recupCat->execute();
+            //     $listCat = $recupCat->fetchAll(PDO::FETCH_ASSOC);
 
-                for ($j = 0; $j < count($listCat); $j++) {
-                    $libelle = $listCat[$j]['libelle'];
-                    $id_cat = $listCat[$j]['id_cat'];
+            //     for ($j = 0; $j < count($listCat); $j++) {
+            //         $libelle = $listCat[$j]['libelle'];
+            //         $id_cat = $listCat[$j]['id_cat'];
 
-                    echo "<div id='cat_$id_cat' onclick='selectCat($id_cat); selected(cat_$id_cat);' class='tri_nav_item '>$libelle</div>";
+            //         echo "<div id='cat_$id_cat' onclick='selectCat($id_cat); selected(cat_$id_cat);' class='tri_nav_item '>$libelle</div>";
 
-                }
+            //     }
 
-                echo "<div id='cat_all' onclick='selectCat(\"cat_all\"); selected(cat_all);' class='tri_nav_item '>Tout</div>";
+            //     echo "<div id='cat_all' onclick='selectCat(\"cat_all\"); selected(cat_all);' class='tri_nav_item '>Tout</div>";
                     
-            } catch(PDOException $e) {
-                echo "error:",$e->getMessage();
-            }
+            // } catch(PDOException $e) {
+            //     echo "error:",$e->getMessage();
+            // }
 
 
             ?>
