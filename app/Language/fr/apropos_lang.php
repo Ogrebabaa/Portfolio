@@ -5,7 +5,8 @@ $lines = [
     "btn_cv" => "MON CV",
     "outil" => "Outils",
     "reseau" => "Réseaux",
-    "nextPage" => "Accueil"
+    "nextPage" => "Accueil",
+    "lienCV" => "CV2019-FR.pdf"
 ];
 return $lines;
 ?>

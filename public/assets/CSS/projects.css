@@ -46,23 +46,19 @@
 
 
 #kdanse {
-    background-image: url("../assets/IMG/kdanse.png");
+    background-image: url("http://localhost:8888/Portfolio/Portfolio/Public/assets/IMG/kdanse.png");
 }
 
 #mcu {
-    background-image: url("../assets/IMG/mcu-timeline.png");
+    background-image: url("http://localhost:8888/Portfolio/Portfolio/Public/assets/IMG/mcu-timeline.png");
 }
 
 #cv {
-    background-image: url("../assets/IMG/cv-en-ligne.png");
-}
-
-#pacman {
-    background-image: url("../assets/IMG/pacman.jpeg");
+    background-image: url("http://localhost:8888/Portfolio/Portfolio/Public/assets/IMG/cv-en-ligne.png");
 }
 
 #artic {
-    background-image: url("../assets/IMG/artic.png");
+    background-image: url("http://localhost:8888/Portfolio/Portfolio/Public/assets/IMG/artic.png");
 }
 
 .project-desc:hover {
