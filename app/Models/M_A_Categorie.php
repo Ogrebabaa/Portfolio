@@ -3,13 +3,12 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class M_Admin extends Model
+class M_A_Categorie extends Model
 {
-    private $login;
-    private $passwd;
-
-    
-
+    protected $table = "PF_A_CATEGORIE";
+    protected $primaryKey = 'id_cat';
+    protected $useAutoIncrement = true;
+    protected $returnType = 'array';
 }
 
 ?>

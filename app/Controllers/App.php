@@ -12,7 +12,7 @@ class App extends BaseController
 		
 	}
 
-	private function loadHeader($pageName) {
+	protected function loadHeader($pageName) {
 		$data = [
 			"pageTitle" => $pageName
 		];
@@ -183,10 +183,10 @@ class App extends BaseController
 	}
 
 	public function admin() {
-		$this->loadHeader("projet");
+		$this->loadHeader("admin");
 		$this->loadMenu();
 		
-		echo view('V_Projet');
+		echo view('V_Admin');
 
 		$this->loadFooter();
 	}

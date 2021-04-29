@@ -25,7 +25,6 @@ const selectCat = (id_cat) => {
     xhr.send();
 }
 
-
 /**
  * 
  * @param {la categorie d'article} item 

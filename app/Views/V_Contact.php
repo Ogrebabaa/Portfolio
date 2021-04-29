@@ -1,5 +1,9 @@
 
+<?php
 
+    $msgSent = false;
+
+?>
 <!--     
 // try {
 //     $dbco = new PDO(DNS, LOGIN, PASSWORD, $options);
@@ -65,7 +69,7 @@
 
 <div class='centered'>
 
-    <h2 style='color: #63f74b'><?php echo lang("contact_lang.msg_envoye"); ?></h2>
+    <h2 style='color: #63f74b'><?php if ($msgSent == true) {echo lang("contact_lang.msg_envoye");} ?></h2>
 
     <h2><?php echo lang("contact_lang.subTitle"); ?></h2>
 
@@ -99,7 +103,7 @@
         <input class='contact-form--input send-btn' type='submit' id='send-btn-contact' value='<?php echo lang("contact_lang.envoyer"); ?>'>
         
     </form>
-    <a class='toHogward' href='index.php?page=admin.php'>
+    <a class='toHogward' href='<?php echo base_url(); ?>/App/Admin'>
         <i class='fas fa-user-lock'></i>
     </a>
 </div>
