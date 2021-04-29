@@ -46,9 +46,9 @@ class C_Admin extends App
     }
 
     private function loadDashboard() {
-        
+        $arr_messages = $this->getAllMessage();
         $data = [
-			
+			"arr_messages" => $arr_messages
 		];
         $this->loadHeader("Dashboard");
 		echo view('V_Dashboard', $data);
@@ -61,6 +61,12 @@ class C_Admin extends App
 		];
         $this->loadHeader("Dashboard");
 		echo view('V_Dashboard_Veille', $data);
+    }
+
+    private function getAllMessage() {
+        $M_Admin = model('App\Models\M_Message');
+        $arr_messages = $M_Admin->findAll();
+        return $arr_messages;
     }
 
 }
