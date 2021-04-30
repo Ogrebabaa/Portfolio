@@ -33,7 +33,7 @@ class C_Admin extends App
                     "code" =>  1,
                     "msg" => "Bonjour $login."
                 ];
-                $this->loadDashboard();
+                return redirect()->to(base_url()."/C_Admin/Dashboard"); 
             } else {
                 $result = [
                     "code" =>  0,
@@ -45,17 +45,38 @@ class C_Admin extends App
 
     }
 
-    private function loadDashboard() {
+    public function Dashboard($onglet="message") {
         $arr_messages = $this->getAllMessage();
-        $data = [
-			"arr_messages" => $arr_messages
-		];
+
+        switch($onglet) {
+            case "message":
+                $data = [
+                    "onglet" => $onglet,
+                    "arr_messages" => $arr_messages
+                ];
+                break;
+            case "veille":
+                $data = [
+                    "onglet" => $onglet,
+
+                ];
+                break;
+            case "projet":
+                $data = [
+                    "onglet" => $onglet,
+
+                ];
+                break;
+            
+        }
+        
+
         $this->loadHeader("Dashboard");
 		echo view('V_Dashboard', $data);
 
     }
 
-    private function loadDash_veille() {
+    private function Dashboard_veille() {
         $data = [
 			
 		];
