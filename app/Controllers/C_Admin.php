@@ -11,6 +11,7 @@ class C_Admin extends App
 	}
 
     public function connexion() {
+        
         $login = $_POST["adm_username"];
         $passwd = $_POST["adm_passwd"];
         $M_Admin = model('App\Models\M_Admin');
@@ -29,11 +30,14 @@ class C_Admin extends App
         } else {
             $db_passwd = $data["passwd"];
             if (password_verify($passwd, $db_passwd)) {
-                $result = [
-                    "code" =>  1,
-                    "msg" => "Bonjour $login."
+                
+                $sessionData = [
+                    "name" => $login,
+                    "statut" => "admin"
                 ];
-                return redirect()->to(base_url()."/C_Admin/Dashboard"); 
+                $this->session->set($sessionData);
+
+                return redirect()->to(base_url()."/C_Admin/Dashboard/message"); 
             } else {
                 $result = [
                     "code" =>  0,
@@ -47,41 +51,43 @@ class C_Admin extends App
 
     public function Dashboard($onglet="message") {
         $arr_messages = $this->getAllMessage();
-
+        $login = $this->session->get('name');
+        $statut = $this->session->get('statut');
         switch($onglet) {
             case "message":
                 $data = [
                     "onglet" => $onglet,
-                    "arr_messages" => $arr_messages
+                    "arr_messages" => $arr_messages,
+                    "name" => $login
                 ];
                 break;
             case "veille":
                 $data = [
                     "onglet" => $onglet,
-
+                    "name" => $login
                 ];
                 break;
             case "projet":
                 $data = [
                     "onglet" => $onglet,
-
+                    "name" => $login
                 ];
                 break;
             
         }
         
-
-        $this->loadHeader("Dashboard");
-		echo view('V_Dashboard', $data);
+        if ($statut == "admin") {
+            $this->loadHeader("Dashboard");
+            echo view('V_Dashboard', $data);
+        } else {
+            return redirect()->to(base_url()."/App/admin"); 
+        }
 
     }
 
-    private function Dashboard_veille() {
-        $data = [
-			
-		];
-        $this->loadHeader("Dashboard");
-		echo view('V_Dashboard_Veille', $data);
+    public function Deconnexion() {
+        $this->session->destroy();
+        return redirect()->to(base_url()."/App/admin"); 
     }
 
     private function getAllMessage() {
