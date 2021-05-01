@@ -9,6 +9,7 @@ class M_Article extends Model
     protected $primaryKey = 'id_article';
     protected $useAutoIncrement = true;
     protected $returnType = 'array';
+
 }
 
 ?>

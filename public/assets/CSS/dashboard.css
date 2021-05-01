@@ -78,42 +78,74 @@
     max-height:100vh;
     overflow: scroll;
     background-color: #444;
+    justify-content: center;
 }
 
-.dash_message {
+.dash_message, .dash_veille {
     display: flex;
+    flex-direction: column;
     background-color: #CCC;
     margin: 5% 10% ;
     border-radius: 5px;
     width: 80%;
+    overflow: scroll;
 }
 
-.dash_message table {
-    width: 100%;
+.dash_veille {
+    margin: 1% 5px ;
+    width: 65%;
+}
+.dash_veille_new {
+    margin: 1% 5px ;
+    width: 35%;
+}
+
+.dash_tri_container {
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}
+
+.dash_tri_container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+.dash_tri_container ul li {
+    margin: 0px 5px;
+}
+
+.dash_message table, .dash_veille table {
     border-collapse: collapse;
     margin: 2%;
     color: #333;
 }
 
-.dash_message thead, .dash_message tbody {
+.dash_message thead, .dash_message tbody, .dash_veille thead, .dash_veille tbody{
     width: 100%;
     text-align: center;
     background-color: var(--main-color);
 }
 
-.dash_message th,  .dash_message td{
+.dash_message th,  .dash_message td, .dash_veille th, .dash_veille td{
     height: 50px;
 }
 
-.dash_message tbody tr:nth-child(odd) {
+.dash_message tbody tr:nth-child(odd), .dash_veille tbody tr:nth-child(odd){
     background-color: rgb(211, 211, 211);
 }
-.dash_message tbody tr:nth-child(even) {
+.dash_message tbody tr:nth-child(even), .dash_veille tbody tr:nth-child(even){
     background-color: rgb(196, 196, 196);
 }
 
-.dash_btn_supp_msg {
+.dash_btn_supp {
+    text-decoration: none;
     color: red;
+}
+.dash_btn_go {
+    text-decoration: none;
+    color: var(--admin-color);
 }
 
 
