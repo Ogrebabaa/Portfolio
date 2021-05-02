@@ -147,6 +147,15 @@ class C_Admin extends App
 
             }
         }
+
+        $index = 0;
+        foreach($arr_articles as $article) {
+            $id_art = $article["id_article"];
+            $arr_cat = $M_Article->getCategories($id_art);
+
+            $arr_articles[$index]['categories'] = $arr_cat;
+            $index++;
+        }
         return $arr_articles;
     }
 
@@ -173,9 +182,27 @@ class C_Admin extends App
         $statut = $this->session->get('statut');
         if ($statut == "admin") {
             $M_Article = model('App\Models\M_Article');
-            print_r($_POST);
 
-            // return redirect()->to(base_url()."/C_Admin/Dashboard/veille"); 
+            if (!empty($_POST)) {
+                $titre = $_POST["titre"];
+                $lien = $_POST["lien"];
+                $contenu = $_POST["contenu"];
+                $arr_categories = $_POST["categories"];
+                $date_publi = $_POST["date_publi"];
+                
+                $data = [
+                    'id_article' => '',
+                    'titre' => $titre,
+                    'lien'    => $lien,
+                    'contenu'    => $contenu,
+                    'date_publi'    => $date_publi,
+                ];
+
+                $id_new_art = $M_Article->insert($data);
+                $M_Article->attributionCateg($arr_categories, $id_new_art);
+            }
+
+            return redirect()->to(base_url()."/C_Admin/Dashboard/veille"); 
         } else {
             return redirect()->to(base_url()."/App/accueil"); 
         }

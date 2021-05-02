@@ -25,6 +25,7 @@
     <main class="dash_main_container">
         
         <?php
+
         switch($onglet) {
             case "message":
                 echo "
@@ -101,6 +102,7 @@
                                 <th>Titre </th>
                                 <th>Date de publication </th>
                                 <th>Contenu  </th>
+                                <th>Catégorie  </th>
                                 <th>Action </th>
                             </tr>
                         </thead>
@@ -113,12 +115,19 @@
                                 $lien = $article["lien"];
                                 $contenu = $article["contenu"];
                                 $date_publi = $article["date_publi"];
-                                
+                                $categories = $article["categories"];
                                 echo "
                                 <tr>
                                     <td>$titre</td>
                                     <td>$date_publi</td>
                                     <td>$contenu</td>
+                                    <td>";
+                                    foreach($categories as $categorie) {
+                                        $libelle = $categorie["libelle"];
+                                        echo "<p>$libelle</p>";
+                                    }
+                                    echo "
+                                    </td>
                                     <td>
                                         <a class=\"dash_btn_supp\" href=\"".base_url()."/C_Admin/DeleteArt/$id_art\">
                                             <i class=\"fas fa-trash-alt\"></i>
@@ -175,7 +184,7 @@
                                             <input type=\"hidden\" name=\"lien\" value=\"$lien\">
                                             <input type=\"hidden\" name=\"contenu\" value=\"$contenu\">
                                             <input type=\"hidden\" name=\"date_publi\" value=\"$date_publi\">
-                                            <select name=\"categorie\" id=\"categorie\" multiple>
+                                            <select name=\"categories[]\" id=\"categorie\" multiple>
                                                 ";
                                                 foreach($arr_categ as $categ) {
                                                     $id_cat = $categ["id_cat"];
