@@ -125,47 +125,7 @@ class C_Admin extends App
         return $arr_messages;
     }
 
-    private function getAllArticle($tri) {
-        $M_Article = model('App\Models\M_Article');
-
-        if ($tri == null) {
-            $arr_articles = $M_Article->findAll();
-        } else {
-            switch($tri) {
-                case 'recent':
-                    $arr_articles = $M_Article->orderBy('date_publi', 'desc')
-                                            ->findAll();
-                    break;
-                case 'ancien':
-                    $arr_articles = $M_Article->orderBy('date_publi', 'asc')
-                                            ->findAll();
-                    break;
-                case 'alpha':
-                    $arr_articles = $M_Article->orderBy('titre', 'asc')
-                                            ->findAll();
-                    break;
-
-            }
-        }
-
-        $index = 0;
-        foreach($arr_articles as $article) {
-            $id_art = $article["id_article"];
-            $arr_cat = $M_Article->getCategories($id_art);
-
-            $arr_articles[$index]['categories'] = $arr_cat;
-            $index++;
-        }
-        return $arr_articles;
-    }
-
-    private function getAllCateg() {
-        $M_Categ = model('App\Models\M_A_Categorie');
-        
-        $arr_categ = $M_Categ->findAll();
-        
-        return $arr_categ;
-    }
+    
 
     public function DeleteMsg($idMsg){
         $statut = $this->session->get('statut');

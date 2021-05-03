@@ -28,6 +28,16 @@ class M_Article extends Model
         $query = $db->query($sql, [$id_article]);
         return $query->getResultArray();
     }
+
+    public function getArticleFromCat($categ) {
+        $db = db_connect();
+        $sql = "SELECT * FROM PF_ARTICLE A
+                INNER JOIN PF_APPARTENIR AP ON A.id_article = AP.id_article
+                INNER JOIN PF_A_CATEGORIE C ON AP.id_cat = C.id_cat
+                WHERE C.id_cat = ?";
+        $query = $db->query($sql, [$categ]);
+        return $query->getResultArray();
+    }
 }
 
 ?>

@@ -63,93 +63,56 @@ for ($i = 0; $i < $nbArticles; $i++) {
         <div class='tri_nav'>
             <!-- Menu de tri - Selection des categories dans la BDD -->
             <?php
-            // try {
-            //     // recuperation et affchage des categories
-            //     $recupCat = $dbco->prepare(
-            //         "SELECT id_cat, libelle FROM PF_A_CATEGORIE"
-            //     );
-            //     $recupCat->execute();
-            //     $listCat = $recupCat->fetchAll(PDO::FETCH_ASSOC);
+            // recuperation et affchage des categories
+            foreach($arr_categories as $categorie) {
+                $id_cat = $categorie["id_cat"];
+                $libelle = $categorie["libelle"];
 
-            //     for ($j = 0; $j < count($listCat); $j++) {
-            //         $libelle = $listCat[$j]['libelle'];
-            //         $id_cat = $listCat[$j]['id_cat'];
-
-            //         echo "<div id='cat_$id_cat' onclick='selectCat($id_cat); selected(cat_$id_cat);' class='tri_nav_item '>$libelle</div>";
-
-            //     }
-
-            //     echo "<div id='cat_all' onclick='selectCat(\"cat_all\"); selected(cat_all);' class='tri_nav_item '>Tout</div>";
-                    
-            // } catch(PDOException $e) {
-            //     echo "error:",$e->getMessage();
-            // }
-
+                if ($current_categ == $id_cat) {
+                    echo "<a href='".base_url()."/App/veille/$id_cat' id='cat_$id_cat' class='tri_nav_item current_cat'>$libelle</a>";
+                } else {
+                    echo "<a href='".base_url()."/App/veille/$id_cat' id='cat_$id_cat' class='tri_nav_item '>$libelle</a>";
+                }
+            }
+            if ($current_categ == null) {
+                echo "<a href='".base_url()."/App/veille' class='tri_nav_item current_cat'>Tout</a>";
+            } else {
+                echo "<a href='".base_url()."/App/veille' class='tri_nav_item '>Tout</a>";
+            }
 
             ?>
             
         </div>
         <div>
-        <form action='index.php?page=dataPortal.php&tri=dateCustom' method='POST'>
-            <label for='dateDebut'>Date début</label>
-            <input type='date' name='dateDebut' id='dateDebut'>
-            <br>
-            <label for='dateFin'>Date fin</label>
-            <input type='date' name='dateFin' id='dateFin'>
-            <br>
-            <input type='submit' value='trier'>
-        </form>
+            <div id="BDD-list-article-container" class="BDD-list-article-container row">
+            
+            <!-- Recuperation et affichage des articles -->
+            
 
         <?php
-            if (isset($_GET["tri"])) {
-                $dateDebut = $_POST["dateDebut"];
-                $dateFin = $_POST["dateFin"];
-                echo "Article paru entre le $dateDebut et $dateFin";
-                try {
-                    $recupArticleDate = $dbco->prepare(
-                        "SELECT id_article, titre, date_publi, lien, contenu FROM `PF_ARTICLE`
-                        WHERE date_publi BETWEEN '$dateDebut' AND '$dateFin'
-                        "
-                    );
-                    
-                    $recupArticleDate->execute();
-                    $BDD_list_articlesDate = $recupArticleDate->fetchAll(PDO::FETCH_ASSOC);
-                    for ($j = 0; $j < sizeof($BDD_list_articlesDate); $j++) {
-        
-                        //suite a des problème de balise dans les titres : regex pour enlever les <b> </b>
-                        $reg = "/(<b>)|(<\/b>)/i";
-                        $titre = $BDD_list_articlesDate[$j]['titre'];
-                        $res = preg_match($reg, $titre); // return 1 si le pattern match, sinon 0
-                        if ($res === 1) {
-                            $titre = preg_replace($reg, "", $titre);
-                        }
-        
-                        $id = $BDD_list_articlesDate[$j]['id_article'];
-                        
-                        $lien = $BDD_list_articlesDate[$j]['lien'];
-                        $contenu = $BDD_list_articlesDate[$j]['contenu'];
-                        $date_publication = $BDD_list_articlesDate[$j]['date_publi'];
-                        echo "
-                        <div class='panel-article column'>
-                            <p class='panel-article-title'>\"$titre\"</p>
-                            <p class='panel-article-date'>Paru le: $date_publication</p>
-                            <a target='blank' href='$lien' class='panel-article-btn panel-article-link'>
-                                <i class='fas fa-eye'></i>
-                            </a>
-                        </div>
-                        ";
-                    }
 
-                } catch(PDOException $e) {
-                    echo "error:",$e->getMessage();
-                }
+            foreach ($arr_articles as $article) {
+                $titre = $article["titre"];
+                $date_publication = $article["date_publi"];
+                $lien = $article["lien"];
+                echo "
+                <div class='panel-article column'>
+                    <p class='panel-article-title'>\"$titre\"</p>
+                    <p class='panel-article-date'>Paru le: $date_publication</p>
+                    <a target='blank' href='$lien' class='panel-article-btn panel-article-link'>
+                        <i class='fas fa-eye'></i>
+                    </a>
+                </div>
+                ";
             }
         ?>
+           
+           </div>
         </div>
         <div id="BDD-list-article-container" class="BDD-list-article-container row">
             
         <!-- Recuperation et affichage des articles -->
-           
+
         </div>
         
     </div>

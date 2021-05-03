@@ -150,19 +150,26 @@ class App extends BaseController
 		$this->loadFooter();
 	}
 
-	public function veille() {
+	public function veille($categ = null) {
+		$tri = null;
+		$arr_categories = $this->getAllCateg();
+		$arr_articles = $this->getAllArticle($tri, $categ);
+
 		$data = [
 			"nextLink" => "contact",
 			"nextPage" => lang("veille_lang.nextPage"), 
 			"prevLink" => "lab",
-			"prevPage" => lang("veille_lang.prevPage")
+			"prevPage" => lang("veille_lang.prevPage"),
+			"arr_categories" => $arr_categories,
+			"arr_articles" => $arr_articles,
+			"current_categ" => $categ
 		];
-		$this->loadHeader("projet");
+		$this->loadHeader("veille");
 		$this->loadMenu();
 		$arrow_nav = $this->loadNavigation("dg", $data);
 		echo $arrow_nav;
 		
-		echo view('V_Veille');
+		echo view('V_Veille', $data);
 
 		$this->loadFooter();
 	}
@@ -190,5 +197,54 @@ class App extends BaseController
 
 		$this->loadFooter();
 	}
+
+	protected function getAllArticle($tri = null, $categ = null) {
+        $M_Article = model('App\Models\M_Article');
+
+        if ($tri == null) {
+            $arr_articles = $M_Article->findAll();
+        } else {
+            switch($tri) {
+                case 'recent':
+                    $arr_articles = $M_Article->orderBy('date_publi', 'desc')
+                                            ->findAll();
+                    break;
+                case 'ancien':
+                    $arr_articles = $M_Article->orderBy('date_publi', 'asc')
+                                            ->findAll();
+                    break;
+                case 'alpha':
+                    $arr_articles = $M_Article->orderBy('titre', 'asc')
+                                            ->findAll();
+                    break;
+					
+
+            }
+        }
+
+		if ($categ == null) {
+			$arr_articles = $M_Article->findAll();
+		} else {
+			$arr_articles = $M_Article->getArticleFromCat($categ);
+		}
+
+        $index = 0;
+        foreach($arr_articles as $article) {
+            $id_art = $article["id_article"];
+            $arr_cat = $M_Article->getCategories($id_art);
+
+            $arr_articles[$index]['categories'] = $arr_cat;
+            $index++;
+        }
+        return $arr_articles;
+    }
+
+    protected function getAllCateg() {
+        $M_Categ = model('App\Models\M_A_Categorie');
+        
+        $arr_categ = $M_Categ->findAll();
+        
+        return $arr_categ;
+    }
 
 }
