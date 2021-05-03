@@ -178,6 +178,18 @@ class C_Admin extends App
         }
         
     }
+    public function DeleteArt($idArt){
+        $statut = $this->session->get('statut');
+        if ($statut == "admin") {
+            $M_Article = model('App\Models\M_Article');
+            
+            $M_Article->delete($idArt);
+            return redirect()->to(base_url()."/C_Admin/Dashboard/veille"); 
+        } else {
+            return redirect()->to(base_url()."/App/accueil"); 
+        }
+        
+    }
     public function AddArticle(){
         $statut = $this->session->get('statut');
         if ($statut == "admin") {
