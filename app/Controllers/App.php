@@ -7,6 +7,7 @@ class App extends BaseController
 	public function index()
 	{
 		//-----------------------
+		return redirect()->to(base_url()."/App/accueil"); 
 		
 	}
 
