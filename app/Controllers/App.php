@@ -179,7 +179,7 @@ class App extends BaseController
 			"prevLink" => "veille",
 			"prevPage" => lang("contact_lang.prevPage")
 		];
-		$this->loadHeader("projet");
+		$this->loadHeader("contact");
 		$this->loadMenu();
 		$arrow_nav = $this->loadNavigation("g", $data);
 		echo $arrow_nav;

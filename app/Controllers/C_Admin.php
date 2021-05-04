@@ -97,26 +97,26 @@ class C_Admin extends App
     }
 
     private function getAllMessage($tri) {
-        $M_Admin = model('App\Models\M_Message');
+        $M_Message = model('App\Models\M_Message');
 
         if ($tri == null) {
-            $arr_messages = $M_Admin->findAll();
+            $arr_messages = $M_Message->findAll();
         } else {
             switch($tri) {
                 case 'recent':
-                    $arr_messages = $M_Admin->orderBy('date', 'desc')
+                    $arr_messages = $M_Message->orderBy('date', 'desc')
                                             ->findAll();
                     break;
                 case 'ancien':
-                    $arr_messages = $M_Admin->orderBy('date', 'asc')
+                    $arr_messages = $M_Message->orderBy('date', 'asc')
                                             ->findAll();
                     break;
                 case 'important':
-                    $arr_messages = $M_Admin->orderBy('priorite', 'desc')
+                    $arr_messages = $M_Message->orderBy('priorite', 'desc')
                                             ->findAll();
                     break;
                 case 'alpha':
-                    $arr_messages = $M_Admin->orderBy('email_contact', 'asc')
+                    $arr_messages = $M_Message->orderBy('email_contact', 'asc')
                                             ->findAll();
                     break;
 

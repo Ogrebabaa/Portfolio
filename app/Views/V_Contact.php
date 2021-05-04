@@ -74,7 +74,7 @@
     <h2><?php echo lang("contact_lang.subTitle"); ?></h2>
 
     <span class='separator'></span>
-    <form class='column contact-form no-bkg' action="<?php  echo base_url(); ?>/C_Contact" method='POST'>
+    <form class='column contact-form no-bkg' action="<?php  echo base_url(); ?>/C_Contact/envoyerMessage" method='POST'>
 
         <div class='row contact-form--name'>
             <input type='text' name='nom' placeholder='<?php echo lang("contact_lang.nom"); ?>' id='nom'>

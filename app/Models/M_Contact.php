@@ -9,6 +9,7 @@ class M_Contact extends Model
     protected $primaryKey = 'email_contact';
     protected $useAutoIncrement = false;
     protected $returnType = 'array';
+    protected $allowedFields = ["email_contact", "nom", "prenom", "statut"];
 }
 
 ?>
