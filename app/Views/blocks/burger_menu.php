@@ -23,7 +23,7 @@
         
     </ul>
     <div id='l_switch' class='l_switch'>
-        <a id='l_link' href='#'>
+        <a id='l_link' href='<?php echo base_url();?>/Language/switchLanguage'>
             <i class="fas fa-language"></i>
         </a>
     </div>

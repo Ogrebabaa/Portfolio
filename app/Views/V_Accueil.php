@@ -1,5 +1,4 @@
 
-
 <div class='no-bkg home-content'>
     <h1 class='no-bkg'><?php echo lang("accueil_lang.main_title");  ?></h1>
     <span class='separator'></span>

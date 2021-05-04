@@ -7,8 +7,6 @@ class App extends BaseController
 	public function index()
 	{
 		//-----------------------
-		$M_Admin = model('App\Models\M_Admin');
-		$data = $M_Admin->find("adminsama");
 		
 	}
 
@@ -23,7 +21,17 @@ class App extends BaseController
 		echo view("blocks/footer");
 	}
 
+	private function loadService() {
+		$session = \Config\Services::session();
+		$this->session = \Config\Services::session();
+		$language = \Config\Services::language();
+    	$language->setLocale($session->get('site_lang'));
+	}
+
+
 	private function loadNavigation($type, $data) {
+
+		$this->loadService();
 
 		switch ($type) {
 			case "d":
@@ -85,23 +93,26 @@ class App extends BaseController
 	}
 
 	public function accueil() {
+		$this->loadService();
+
 		$data = [
 			"nextLink" => "projet",
 			"nextPage" => lang("accueil_lang.nextPage"), 
 			"prevLink" => "apropos",
-			"prevPage" => lang("accueil_lang.prevPage")
+			"prevPage" => lang("accueil_lang.prevPage"),
 		];
 		$this->loadHeader("accueil");
 		$this->loadMenu();
 		$arrow_nav = $this->loadNavigation("dg", $data);
 		echo $arrow_nav;
 
-		echo view('V_Accueil');
+		echo view('V_Accueil', $data);
 
 		$this->loadFooter();
 	}
 
 	public function projet() {
+		$this->loadService();
 		$data = [
 			"nextLink" => "lab",
 			"nextPage" => lang("projet_lang.nextPage"), 
@@ -119,6 +130,7 @@ class App extends BaseController
 	}
 
 	public function apropos() {
+		$this->loadService();
 		$data = [
 			"nextLink" => "accueil",
 			"nextPage" => lang("apropos_lang.nextPage"), 
@@ -134,6 +146,7 @@ class App extends BaseController
 	}
 
 	public function lab() {
+		$this->loadService();
 		$data = [
 			"nextLink" => "veille",
 			"nextPage" => "veille", //!fix : traduction pas encore créé pour cette page
@@ -151,6 +164,7 @@ class App extends BaseController
 	}
 
 	public function veille($categ = null) {
+		$this->loadService();
 		$tri = null;
 		$arr_categories = $this->getAllCateg();
 		$arr_articles = $this->getAllArticle($tri, $categ);
@@ -175,6 +189,7 @@ class App extends BaseController
 	}
 
 	public function contact($messageEnvoye = null) {
+		$this->loadService();
 
 		$data = [
 			"prevLink" => "veille",
@@ -210,7 +225,6 @@ class App extends BaseController
 			} else {
 				$arr_articles = $M_Article->getArticleFromCat($categ);
 			}
-            // $arr_articles = $M_Article->findAll();
         } else {
             switch($tri) {
                 case 'recent':
@@ -225,8 +239,6 @@ class App extends BaseController
                     $arr_articles = $M_Article->orderBy('titre', 'asc')
                                             ->findAll();
                     break;
-					
-
             }
         }
 
