@@ -1,13 +1,20 @@
 
-<?php
 
-    $msgSent = false;
-
-?>
 
 <div class='centered'>
 
-    <h2 style='color: #63f74b'><?php if ($msgSent == true) {echo lang("contact_lang.msg_envoye");} ?></h2>
+    <?php
+
+    if (isset($messageEnvoye)) {
+        if ($messageEnvoye == true) {
+            echo "<h2 style='color: #63f74b'>".lang('contact_lang.msg_envoye')."</h2>";
+        } else {
+            echo "<h2 style='color: red'>Une erreur s'est produite, veuillez réessayer plus tard.</h2>";
+        }
+    }
+
+    ?>
+    
 
     <h2><?php echo lang("contact_lang.subTitle"); ?></h2>
 
@@ -21,7 +28,7 @@
 
         <div class='row contact-form--statut'>
             <!-- <div> -->
-            <input type='radio' name='statut' value='1' id='Particulier'>
+            <input type='radio' name='statut' value='1' id='Particulier' checked>
             <input type='radio' name='statut' value='2' id='Professionel'>
 
             <label class='radio-label' for='Particulier'><?php echo lang("contact_lang.particulier"); ?></label>

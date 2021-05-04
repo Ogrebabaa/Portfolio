@@ -7,7 +7,6 @@ class C_Contact extends BaseController
 	public function index()
 	{
 		//-----------------------
-        print_r($_POST);
 		
 	}
 
@@ -25,9 +24,9 @@ class C_Contact extends BaseController
 			
 
 			$dataContact = [
+				"email_contact" => $email,
 				"nom" => $nom,
 				"prenom" => $prenom,
-				"email" => $email,
 				"statut" => $statut
 			];
 
@@ -41,7 +40,7 @@ class C_Contact extends BaseController
 			];
 
 			$M_Message->sendMessage($dataMessage);
-			return redirect()->to(base_url()."/App/contact");
+			return redirect()->to(base_url()."/App/contact/true");
 		}
 	}
 

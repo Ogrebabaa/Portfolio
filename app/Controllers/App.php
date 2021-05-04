@@ -174,17 +174,20 @@ class App extends BaseController
 		$this->loadFooter();
 	}
 
-	public function contact() {
+	public function contact($messageEnvoye = null) {
+
 		$data = [
 			"prevLink" => "veille",
-			"prevPage" => lang("contact_lang.prevPage")
+			"prevPage" => lang("contact_lang.prevPage"),
+			"messageEnvoye" => $messageEnvoye
 		];
+
 		$this->loadHeader("contact");
 		$this->loadMenu();
 		$arrow_nav = $this->loadNavigation("g", $data);
 		echo $arrow_nav;
 		
-		echo view('V_Contact');
+		echo view('V_Contact', $data);
 
 		$this->loadFooter();
 	}
