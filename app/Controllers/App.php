@@ -205,7 +205,12 @@ class App extends BaseController
         $M_Article = model('App\Models\M_Article');
 
         if ($tri == null) {
-            $arr_articles = $M_Article->findAll();
+			if ($categ == null) {
+				$arr_articles = $M_Article->findAll();
+			} else {
+				$arr_articles = $M_Article->getArticleFromCat($categ);
+			}
+            // $arr_articles = $M_Article->findAll();
         } else {
             switch($tri) {
                 case 'recent':
@@ -225,11 +230,7 @@ class App extends BaseController
             }
         }
 
-		if ($categ == null) {
-			$arr_articles = $M_Article->findAll();
-		} else {
-			$arr_articles = $M_Article->getArticleFromCat($categ);
-		}
+		
 
         $index = 0;
         foreach($arr_articles as $article) {

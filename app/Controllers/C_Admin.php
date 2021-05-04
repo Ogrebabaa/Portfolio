@@ -16,16 +16,8 @@ class C_Admin extends App
         $passwd = $_POST["adm_passwd"];
         $M_Admin = model('App\Models\M_Admin');
 		$data = $M_Admin->find($login);
-        $result = [
-            "code" =>  0,
-            "msg" => ""
-        ];
 
         if ($data == null) {
-            $result = [
-                "code" =>  0,
-                "msg" => "L'utilisateur $login, n'est pas connu de la base de donnée."
-            ];
             return redirect()->to(base_url()."/App/admin"); 
         } else {
             $db_passwd = $data["passwd"];
@@ -39,10 +31,6 @@ class C_Admin extends App
 
                 return redirect()->to(base_url()."/C_Admin/Dashboard/message"); 
             } else {
-                $result = [
-                    "code" =>  0,
-                    "msg" => "Mot de passe incorrect."
-                ];
                 return redirect()->to(base_url()."/App/admin"); 
             }
         }
