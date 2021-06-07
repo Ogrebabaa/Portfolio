@@ -1,0 +1,56 @@
+/* Style du formulaire */
+
+
+.admin-content h2 {
+    /* border: 2px solid red; */
+    text-decoration: underline;
+}
+
+.admin-content form {
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: 100%;
+    /* margin: auto; */
+    justify-content: center;
+}
+
+.admin-content-input {
+    margin-left: 25%;
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
+    height: 13%;
+    border: 4px solid #FFF;
+    color: #FFF;
+    background: none;
+}
+
+.admin-content-input,
+.admin-content-input::-webkit-input-placeholder {
+    font-size: 20pt;
+    line-height: 3;
+    color: #FFF;
+}
+
+
+
+#send-btn-admin {
+    width: 20%;
+    margin-left: 40%;
+    transition: .25s;
+}
+
+#send-btn-admin, #send-btn-contact
+#send-btn-admin::-webkit-input-placeholder, #send-btn-contact::-webkit-input-placeholder {
+    font-size: 15pt;
+    line-height: 1;
+    
+}
+
+.send-btn:hover {
+    background-color: #FFF;
+    color: #3273DC;
+    cursor: pointer;
+}
+
+/* Style du panneau de configuration */

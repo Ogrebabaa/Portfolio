@@ -1,0 +1,40 @@
+CRITICAL - 2021-05-03 06:35:42 --> Undefined variable: arr_categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Veille.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 68, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Veille', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(171): view('V_Veille')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->veille()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-03 06:36:27 --> Undefined variable: article
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Veille.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 69, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Veille', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(171): view('V_Veille', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->veille()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-03 06:36:37 --> Undefined variable: listCat
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Veille.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 75, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Veille', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(171): view('V_Veille', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->veille()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-03 07:39:18 --> Undefined variable: current_cat
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Veille.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 71, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Veille', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(172): view('V_Veille', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->veille()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}

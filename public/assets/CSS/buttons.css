@@ -1,0 +1,51 @@
+.btn-main {
+    display: block;
+    width: 220px;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20pt;
+    margin-top: 15px;
+    transition: .25s ease-in-out;
+}
+
+.btn-main:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #3273DC;
+    transform: translateY(-10px);
+
+}
+
+.project-btn {
+    display: none;
+    color: white;
+    font-size: 10pt;
+    text-decoration: none;
+    background-color: #3273DC;
+    /* width: 40%; */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: .25s ease-in-out;
+    margin-top: 10px;
+
+}
+
+.project-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(34, 100, 206);
+    transform: translateY(-5px);
+}
+
+.is-forbidden {
+    background-color: red;
+    cursor: no-drop;
+}
+
+.is-forbidden:hover {
+    background-color: red;
+}

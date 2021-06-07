@@ -1,0 +1,101 @@
+CRITICAL - 2021-03-10 01:24:17 --> Trying to get property '' of non-object
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Applications/M...', 34, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(17): App\Controllers\App->loadMenu(NULL)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-03-10 01:26:42 --> Undefined variable: current_langue
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/blocks/burger_menu.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 3, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('blocks/burger_m...', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(36): view('blocks/burger_m...', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(17): App\Controllers\App->loadMenu(NULL)
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-10 01:38:35 --> Undefined variable: bibliotheque
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/blocks/burger_menu.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 9, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('blocks/burger_m...', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(36): view('blocks/burger_m...', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(17): App\Controllers\App->loadMenu(NULL)
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-10 01:44:41 --> Undefined variable: current_langue
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/blocks/burger_menu.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 3, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('blocks/burger_m...', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(33): view('blocks/burger_m...')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(16): App\Controllers\App->loadMenu()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-10 01:46:16 --> Undefined variable: langue
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Accueil.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 7, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Accueil', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(18): view('V_Accueil')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-10 02:05:53 --> Undefined property: App\Controllers\App::$lang
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 15, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-10 02:06:04 --> Undefined property: App\Controllers\App::$lang
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 15, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-10 04:00:48 --> Invalid file: V_Projets.php
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('V_Projets.php')
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Projets', Array, true)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(38): view('V_Projets')
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->projet()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-10 04:01:18 --> Invalid file: V_Projets.php
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('V_Projets.php')
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Projets', Array, true)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(38): view('V_Projets')
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->Projets()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-10 04:21:31 --> Invalid file: V_Projets.php
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('V_Projets.php')
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Projets', Array, true)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(38): view('V_Projets')
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->Projets()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-10 04:48:59 --> Invalid file: V_Projets.php
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('V_Projets.php')
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Projets', Array, true)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(41): view('V_Projets')
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->Projets()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}

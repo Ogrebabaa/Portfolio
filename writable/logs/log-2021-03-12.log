@@ -1,0 +1,31 @@
+CRITICAL - 2021-03-12 04:30:08 --> Invalid file: V_Projets.php
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('V_Projets.php')
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Projets', Array, true)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(41): view('V_Projets')
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->Projets()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-12 04:48:49 --> Undefined variable: pageName
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/blocks/footer.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 7, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('blocks/footer', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(21): view('blocks/footer')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(34): App\Controllers\App->loadFooter()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-12 04:49:18 --> Undefined variable: pageName
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/blocks/footer.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 7, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('blocks/footer', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(21): view('blocks/footer')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(34): App\Controllers\App->loadFooter()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}

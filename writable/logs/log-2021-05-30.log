@@ -1,0 +1,8 @@
+CRITICAL - 2021-05-30 18:16:57 --> Undefined variable: arr_messages
+#0 /var/www/html/app/Controllers/C_Admin.php(116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/C_Admin.php(49): App\Controllers\C_Admin->getAllMessage()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}

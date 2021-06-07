@@ -1,0 +1,150 @@
+/* 1er container presentation */
+.pres-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.veille-presentation {
+    width: 68%;
+    text-align: left;
+}
+
+.veille-presentation--para, .veille-presentation--list_element {
+    font-size: 10pt;
+    color: #CCC;
+}
+
+.veille-presentation--title {
+    color: var(--main-color);
+    background-color: #FFF;
+    padding: 5px;
+
+
+}
+
+.article_list {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 400px;
+    overflow: auto;
+    /* align-self: flex-end; */
+}
+
+.article {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: left;
+    border: 1px solid #CCC;
+    transition: .2s ease-in-out;
+}
+
+.article:hover {
+    background-color: #CCC;
+}
+
+.article p, .article a {
+    padding: 2px;
+    font-size: 8pt;
+    text-decoration: none;
+    font: #000;
+}
+
+/* 2eme container - Selection d'article */
+
+.article-bdd-container {
+    width: 100%;
+    align-items: center;
+
+}
+
+.tri_nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.tri_nav_item {
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    /* border-radius: 10px; */
+    text-decoration: none;
+    color: #FFF;
+    transition: .25s ease-in-out;
+    cursor: pointer;
+}
+
+.tri_nav_item:hover, .current_cat {
+
+    background-color: #FFF;
+    color: var(--main-color);
+}
+
+/* Styles de la sélection d'article */
+.BDD-list-article-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.panel-article {
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    height: 250px;
+    background-color: #FFF;
+    color: var(--main-color);
+    position: relative;
+    transition: .25s ease-in-out;
+    text-align: start;
+}
+
+.panel-article:hover {
+    background-color: #CCC; 
+
+}
+.panel-article-btn {
+    display: none;
+    
+    color: #FFF;
+    background-color: var(--main-color);
+    font-size: 20pt;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    transition: .25s ease-in-out;
+    text-align: center;
+}
+
+.panel-article-link {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.panel-article-edit {
+    position: absolute;
+    bottom: 5px;
+    right: 60px;
+    background-color: red;
+}
+
+.panel-article:hover .panel-article-link, .panel-article:hover  .panel-article-edit {
+    display: block;
+}
+
+.panel-article-title {
+    font-size: 20pt;
+    font-family: 'Righteous', cursive;
+}
+
+.panel-article-date {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}

@@ -1,0 +1,156 @@
+CRITICAL - 2021-05-02 02:53:57 --> Allowed fields must be specified for model: App\Models\M_Article
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Model.php(1265): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\M_Ar...')
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Model.php(735): CodeIgniter\Model->doProtectFields(Array)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(191): CodeIgniter\Model->insert(Array)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->AddArticle()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-02 02:54:25 --> Allowed fields must be specified for model: App\Models\M_Article
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Model.php(1265): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\M_Ar...')
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Model.php(735): CodeIgniter\Model->doProtectFields(Array)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(192): CodeIgniter\Model->insert(Array)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->AddArticle()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-02 03:25:36 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 117, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille', 'recent')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:30:21 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 117, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille', 'alpha')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:30:23 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 117, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille', 'alpha')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:30:23 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 117, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille', 'alpha')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:30:24 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 117, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille', 'alpha')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:30:24 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 117, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille', 'recent')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:30:24 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 117, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:30:25 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 117, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:31:02 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 117, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:41:59 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 118, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:49:52 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 118, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:54:06 --> Undefined index: categories
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Dashboard.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 118, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(87): view('V_Dashboard', Array)
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille')
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-02 03:56:15 --> array_push() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() ex...', '/Applications/M...', 155, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(155): array_push(NULL, 'toto')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(67): App\Controllers\C_Admin->getAllArticle(NULL)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-02 04:02:55 --> array_push() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() ex...', '/Applications/M...', 156, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(156): array_push(NULL, 'toto')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/C_Admin.php(67): App\Controllers\C_Admin->getAllArticle(NULL)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\C_Admin->Dashboard('veille')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Admin))
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}

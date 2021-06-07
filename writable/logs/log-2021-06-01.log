@@ -1,0 +1,108 @@
+CRITICAL - 2021-06-01 06:34:25 --> Undefined variable: name
+#0 /var/www/html/app/Views/V_Message.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/system/View/View.php(246): include('/var/www/html/a...')
+#2 /var/www/html/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/app/Controllers/C_Admin.php(66): view()
+#4 /var/www/html/system/CodeIgniter.php(918): App\Controllers\C_Admin->voirMessage()
+#5 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 06:34:50 --> syntax error, unexpected '"priorite"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /var/www/html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 06:34:52 --> syntax error, unexpected '"priorite"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /var/www/html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 06:34:53 --> syntax error, unexpected '"priorite"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /var/www/html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 06:34:56 --> syntax error, unexpected '"priorite"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /var/www/html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 06:34:58 --> syntax error, unexpected '"priorite"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /var/www/html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 06:35:20 --> syntax error, unexpected '"priorite"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /var/www/html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 06:35:23 --> syntax error, unexpected '"priorite"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /var/www/html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 06:35:41 --> syntax error, unexpected '"priorite"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /var/www/html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 06:35:45 --> syntax error, unexpected '"priorite"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /var/www/html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 06:35:58 --> Undefined variable: onglet
+#0 /var/www/html/app/Views/V_Message.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/system/View/View.php(246): include('/var/www/html/a...')
+#2 /var/www/html/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/app/Controllers/C_Admin.php(67): view()
+#4 /var/www/html/system/CodeIgniter.php(918): App\Controllers\C_Admin->voirMessage()
+#5 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 06:42:42 --> syntax error, unexpected '$M_Message' (T_VARIABLE)
+#0 /var/www/html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 06:43:00 --> Allowed fields must be specified for model: App\Models\M_Message
+#0 /var/www/html/system/Model.php(1265): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+#1 /var/www/html/system/Model.php(870): CodeIgniter\Model->doProtectFields()
+#2 /var/www/html/app/Controllers/C_Admin.php(59): CodeIgniter\Model->update()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\C_Admin->voirMessage()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-01 06:43:56 --> Allowed fields must be specified for model: App\Models\M_Message
+#0 /var/www/html/system/Model.php(1265): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+#1 /var/www/html/system/Model.php(870): CodeIgniter\Model->doProtectFields()
+#2 /var/www/html/app/Controllers/C_Admin.php(59): CodeIgniter\Model->update()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\C_Admin->voirMessage()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}

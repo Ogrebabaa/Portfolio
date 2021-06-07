@@ -1,0 +1,242 @@
+CRITICAL - 2021-03-09 08:11:34 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:11:37 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:11:56 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:11:57 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:12:06 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:12:06 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:12:06 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:12:06 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:12:07 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:12:07 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:12:07 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:13:37 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:15:55 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:17:19 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:19:25 --> Unable to connect to the database.
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(15): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:20:01 --> Undefined property: stdClass::$title
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Models/M_Admin.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 17, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(8): App\Models\M_Admin->getAll()
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->index()
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-03-09 08:36:26 --> Invalid file: block/header.php
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('block/header.ph...')
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('block/header', Array, true)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(22): view('block/header')
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(14): App\Controllers\App->loadHeader()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:36:51 --> Invalid file: block/header.php
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('block/header.ph...')
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('block/header', Array, true)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(22): view('block/header')
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(14): App\Controllers\App->loadHeader()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:36:59 --> Invalid file: header.php
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('header', Array, true)
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(22): view('header')
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(14): App\Controllers\App->loadHeader()
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:43:18 --> Undefined variable: langue
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/V_Accueil.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 7, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('V_Accueil', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(16): view('V_Accueil')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-09 08:47:10 --> Undefined variable: current_langue
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/blocks/burger_menu.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 3, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('blocks/burger_m...', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(32): view('blocks/burger_m...')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(16): App\Controllers\App->loadMenu()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-09 08:50:55 --> Undefined variable: current_langue
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/blocks/burger_menu.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 3, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('blocks/burger_m...', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(32): view('blocks/burger_m...')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(16): App\Controllers\App->loadMenu()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-09 08:50:57 --> Undefined variable: current_langue
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/blocks/burger_menu.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 3, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('blocks/burger_m...', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(32): view('blocks/burger_m...')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(16): App\Controllers\App->loadMenu()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-09 08:51:16 --> Undefined variable: current_langue
+#0 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Views/blocks/burger_menu.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 3, Array)
+#1 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/View/View.php(246): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/Common.php(1119): CodeIgniter\View\View->render('blocks/burger_m...', Array, true)
+#3 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(33): view('blocks/burger_m...')
+#4 /Applications/MAMP/htdocs/Portfolio/Portfolio/app/Controllers/App.php(17): App\Controllers\App->loadMenu()
+#5 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(918): App\Controllers\App->accueil()
+#6 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#7 /Applications/MAMP/htdocs/Portfolio/Portfolio/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/Portfolio/Portfolio/Public/index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}

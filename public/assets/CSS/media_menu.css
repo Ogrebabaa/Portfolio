@@ -1,0 +1,27 @@
+.media_menu {
+    /* border: 2px solid red; */
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    right: 36px;
+    z-index: 998;
+    /* delete the space at the beggining of the block */
+    padding-inline-start: 0px;
+}
+
+.media_menu li {
+    display: inline-block;
+}
+
+.media_menu li a {
+    display: block;
+    font-size: 2rem;
+    padding: 0px 5px;
+    color: white;
+    transition: .25s ease-in-out;
+}
+
+.media_menu li a:hover  {
+    color: #999;
+}
+

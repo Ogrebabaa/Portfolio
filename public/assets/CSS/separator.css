@@ -1,0 +1,14 @@
+.separator {
+    border: 2px solid #666;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+#s2 {
+    width: 100px;
+}
+
+#s-project {
+    width: 350px;
+}

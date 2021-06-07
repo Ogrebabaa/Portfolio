@@ -1,0 +1,224 @@
+/* =============== EXTERNAL STYLESHEETS =============== */
+@import url(media_menu.css);
+@import url(menu_burger.css);
+@import url(logo.css);
+@import url(arrow_nav.css);
+@import url(separator.css);
+@import url(buttons.css);
+/*  =============== PAGES  =============== */
+@import url(about.css);
+@import url(projects.css);
+@import url(contact.css);
+@import url(admin.css);
+@import url(lab.css);
+@import url(dashboard.css);
+@import url(veille.css);
+
+
+/*  =============== FONTS (for offline mode)  =============== */
+@import url(font.css);
+/*  =============== RESPONSIVE  =============== */
+@import url(responsive.css);
+/*  =============== EXTERNAL STYLESHEETS =============== */
+
+/* =============== GLOBAL STYLE =============== */
+:root {
+    --main-color: #3273DC; 
+    --admin-color: #444;  
+}
+* {
+
+    /* font-family: 'Overpass', sans-serif; */
+    font-family: 'Work Sans';
+    /* background-color: #3273DC; */
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.hide {
+    display: none;
+}
+
+/* Particles canvas */
+#particles-js {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+}
+/* Particles canvas */
+
+body {
+    background-color: var(--main-color);
+
+}
+
+body h1 {
+    font-size: 40pt;
+    color: white;
+    font-size-adjust: 50%;
+    margin: 0;
+    font-weight: 400;
+}
+
+body h2 {
+    font-size: 25pt;
+    margin: 0;
+    font-weight: lighter;
+    color: #cccccc;
+    clear: both;
+}
+
+.centered {
+    display: flex;
+    /* ALIGNMENT */
+    flex-direction: column;
+    /* border: 2px solid red; */
+    /* DIMENSION */
+    height: 80%;
+    width: 80%;
+    /* POSITION */
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    /* Z-INDEX IMPORTANT FOR THE BURGER MENU */
+    z-index: -999;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.tile {
+    padding: 10px;
+    background-color: #CCC;
+    border: 1px solid #CCC;
+    /* border-radius: 10px; */
+    box-shadow: 0px 0px 15px #333;
+}
+
+/* =============== GLOBAL STYLE =============== */
+
+/* =============== FOR THE HOME PAGE =============== */
+.home-content {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* position */
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    right: 20%;
+    z-index: 998;
+}
+
+.no-bkg {
+    background: none;
+}
+
+/* =============== FOR THE HOME PAGE =============== */
+
+/* loading screen */
+
+.loading_screen {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+    z-index: 9999;
+}
+
+.loading_screen--dot {
+    transform: scale(0);
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px #333;
+    margin: 0;
+    margin-left: 20px;
+    display: block;
+    background: #fff;
+    height: 25px;
+    width: 25px;
+}
+
+.is-animate-growing {
+    -webkit-animation: 1.5s grow ease-in-out;
+    animation: 1.5s grow ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    
+}
+
+.loading_screen--dot:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.loading_screen--dot:nth-child(2) {
+    animation-delay: .45s;
+}
+
+.loading_screen--dot:nth-child(3) {
+    animation-delay: .65s;
+}
+
+@-webkit-keyframes grow {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+@keyframes grow {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+/* loading screen */
+
+/* veille */
+
+.veille-content {
+    /* height: unset; */
+    /* overflow: scroll;
+    overflow-x: hidden; */
+    overflow: auto;
+}
+/* veille */

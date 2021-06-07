@@ -1,0 +1,7 @@
+CRITICAL - 2021-05-20 01:35:47 --> Undefined index: categories
+#0 /var/www/html/app/Controllers/C_Admin.php(156): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/system/CodeIgniter.php(918): App\Controllers\C_Admin->AddArticle()
+#2 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}

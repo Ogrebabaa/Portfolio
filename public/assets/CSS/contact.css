@@ -1,0 +1,125 @@
+.contact-form {
+    /* border: 2px solid yellow; */
+    width: 100%;
+}
+
+.contact-form--input,
+textarea,
+.contact-form--name input {
+    margin-left: 25%;
+    margin-top: 20px;
+    padding: 8px;
+    width: 50%;
+    border: 4px solid #FFF;
+    color: #FFF;
+    background: none;
+}
+
+.contact-form--name,
+.contact-form--statut {
+    width: 50%;
+    background: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+textarea {
+
+    height: initial;
+    /* permet de redonner au champ msg sa taille d'origine */
+
+}
+
+/* Pour pallier le problème d'alignement */
+.contact-form--name input {
+    margin-left: auto;
+}
+
+/* Permet de creer l'espace entre les deux premier champs du form */
+.contact-form--name input:nth-child(1) {
+    margin-right: 10px;
+
+}
+
+.contact-form--input,
+.contact-form--name input,
+textarea,
+.contact-form--input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+.contact-form--name input::-webkit-input-placeholder {
+    font-size: 16pt;
+    line-height: 1;
+    color: #FFF;
+}
+
+.contact-form--statut {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.radio-label {
+    color: #fff;
+    font-size: 16pt;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.checkmark {
+    border: 3px solid #fff;
+    display: flex;
+    height: 30px;
+    width: 30px;
+}
+
+#Particulier:checked~#checkmarkPart {
+    background-color: #fff;
+}
+
+#Professionel:checked~#checkmarkPro {
+    background-color: #fff;
+}
+
+#Professionel,
+#Particulier {
+    display: none;
+}
+
+#send-btn-contact {
+    width: 20%;
+    margin-left: 40%;
+    transition: .25s;
+}
+
+#send-btn-contact:hover {
+    background-color: #FFF;
+    color: #3273DC;
+    cursor: pointer;
+}
+
+
+.toHogward {
+    opacity: 0;
+    /* border: 2px solid red; */
+    padding: 5px;
+    color: white;
+    font-size: 20pt;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .25s;
+}
+
+.toHogward:hover {
+    opacity: 1;
+}
+
+.msg-sent {
+    color: #fff;
+    position: absolute;
+    bottom: 5%;
+    left: 48%;
+}

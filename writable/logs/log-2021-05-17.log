@@ -1,0 +1,6 @@
+CRITICAL - 2021-05-17 16:17:38 --> Call to undefined function App\Controllers\accueil()
+#0 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Site->index()
+#1 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
