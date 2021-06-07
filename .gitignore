@@ -1,2 +1,2 @@
 .htaccess
-/var/www/html/public/index.php
+#public/index.php
